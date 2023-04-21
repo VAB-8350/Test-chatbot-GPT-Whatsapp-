@@ -1,4 +1,4 @@
-const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot')
+const { createProvider } = require('@bot-whatsapp/bot')
 require('dotenv').config()
 
 const QRPortalWeb = require('@bot-whatsapp/portal')
@@ -20,7 +20,7 @@ const main = async () => {
         database: adapterDB
     })
 
-    QRPortalWeb()
+    QRPortalWeb({port: 3000})
 }
 
 main()
