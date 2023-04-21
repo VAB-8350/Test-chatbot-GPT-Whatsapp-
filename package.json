@@ -2,10 +2,10 @@
     "name": "base-bailey-memory",
     "version": "1.0.0",
     "description": "",
-    "main": "app.js",
+    "main": "./src/app.js",
     "scripts": {
         "pre-copy": "cd .. && npm run  copy.lib base-baileys-memory",
-        "start": "node src/app.js"
+        "start": "node ./src/app.js"
     },
     "keywords": [],
     "dependencies": {
